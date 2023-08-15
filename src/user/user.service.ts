@@ -23,7 +23,7 @@ export class UserService {
 
   constructor() {}
 
-  findUser(login: string, password: string): TUser {
+  find(login: string, password: string): TUser {
     return this.users.find(
       (user) => user.login === login && user.password === password,
     );
